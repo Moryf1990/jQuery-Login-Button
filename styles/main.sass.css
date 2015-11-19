@@ -1,0 +1,67 @@
+#top-half {
+  background: #E8E8E8;
+  margin-top: -0.5em;
+  margin-left: -0.5em;
+  margin-right: -0.5em;
+  padding-top: 13em; }
+
+#logo {
+  margin: 0 auto;
+  display: block; }
+
+#bottom-half {
+  height: 20em;
+  background: #1D1D1D;
+  margin-top: -0.5em;
+  margin-left: -0.5em;
+  margin-right: -0.5em; }
+
+#userform {
+  color: #fff;
+  text-align: center;
+  padding-top: 1em;
+  font-family: 'Open Sans', sans-serif; }
+
+#error1 {
+  font-family: none; }
+
+#error2 {
+  font-family: none; }
+
+#error3 {
+  font-family: none; }
+
+#error4 {
+  font-family: none; }
+
+#error5 {
+  font-family: none; }
+
+#error6 {
+  font-family: none; }
+
+#passwordform {
+  color: #fff;
+  text-align: center;
+  margin-left: 0.2em;
+  padding-top: 1em;
+  font-family: 'Open Sans', sans-serif; }
+
+.input {
+  width: 15em;
+  height: 2em;
+  border-radius: 0.5em; }
+
+#button {
+  background: #85BC32;
+  border-radius: 0.5em;
+  color: #fff;
+  font-weight: 900;
+  width: 8em;
+  height: 3em;
+  font-family: 'Open Sans', sans-serif; }
+
+#buttonid {
+  text-align: center;
+  padding-top: 1em;
+  padding-left: 9.5em; }
