@@ -13,6 +13,7 @@ form.on('submit', function (e) {
 	var error4 = $('#error4');
 	var error5 = $('#error5');
 	var error6 = $('#error6');
+	var error7 = $('#error7');
 	var hasError = false;
 	error1.html('');
 	error2.html('');
@@ -64,6 +65,13 @@ form.on('submit', function (e) {
 	if (username.val() === 'aaron@theironyard.com' && password.val() === 'password123' || username.val() === 'admin@google.com' && password.val() === 'pandas' || username.val() === 'm@gmail.com' && password.val() === 'honeycrisp') {
 		hasError = false;
 		window.location = 'http://theironyard.com';
+	}
+
+	if (username.val() !== 'aaron@theironyard.com' && password.val() === 'password123' || username.val() === 'aaron@theironyard.com' && password.val() !== 'password123' || username.val() !== 'admin@google.com' && password.val() === 'pandas' || username.val() === 'admin@google.com' && password.val() !== 'pandas' || username.val() !== 'm@gmail.com' && password.val() === 'honeycrisp' || username.val() === 'm@gmail.com' && password.val() !== 'honeycrisp') {
+		hasError = true;
+		error7.show();
+		error7.html('Please enter a valid username/password combination.');
+		error7.css({ paddingLeft: '4em' });
 	}
 });
 
