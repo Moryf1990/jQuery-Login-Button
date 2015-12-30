@@ -40,8 +40,7 @@ form.on('submit', function (e) {
 
 	if (username.val() !== '' && username.val().indexOf('@') === -1) {
 		hasError = true;
-		error5.show();
-		error5.html('Email must contain an \'@\'.');
+		error5.html('Email must contain an \'@\'.').show();
 		error5.css({ paddingLeft: '5.5em' });
 	}
 
@@ -69,8 +68,7 @@ form.on('submit', function (e) {
 
 	if (username.val() !== 'aaron@theironyard.com' && password.val() === 'password123' || username.val() === 'aaron@theironyard.com' && password.val() !== 'password123' || username.val() !== 'admin@google.com' && password.val() === 'pandas' || username.val() === 'admin@google.com' && password.val() !== 'pandas' || username.val() !== 'm@gmail.com' && password.val() === 'honeycrisp' || username.val() === 'm@gmail.com' && password.val() !== 'honeycrisp') {
 		hasError = true;
-		error7.show();
-		error7.html('Please enter a valid username/password combination.');
+		error7.html('Please enter a valid username/password combination.').show();
 		error7.css({ paddingLeft: '4em' });
 	}
 });
